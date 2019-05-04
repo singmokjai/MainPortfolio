@@ -3,12 +3,63 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: #dcdde1;
 
 }
 
 #particles-js {
 
-    height: 50%;
+    height: 100%;
+    width: 100%;
     background: #353b48;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+#skills, #portfolio, #contact {
+
+    height: 100vh;
+
+}
+
+#mainland-butt {
+
+    position: absolute;
+    padding-left: 600px;
+    padding-top: 550px;
+
+}
+
+.nav-wrapper {
+
+    background-color: #3dc1d3;
+
+}
+
+#bio {
+
+    padding-top: 50px;
+    height: 100vh;
+    
+}
+
+#bio-pic {
+
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 25%;
+    height: auto;
+    padding-top: 20px;
+    border-radius: 30%;
+
+}
+
+#bio-Desc {
+
+    color: #f6e58d;
+    text-align: center;
 
 }

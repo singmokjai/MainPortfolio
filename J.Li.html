@@ -12,8 +12,6 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <title>J.Li | Portfolio</title>
 
     <link rel = "icon" type = "image/png" href = ".png">
@@ -24,11 +22,13 @@
 
 <div id="main-landing">
     <div id="particles-js">
-        <div id="mainland-butt"><a class="waves-effect waves-light btn"><i class="material-icons left">arrow_downward</i>View Portfolio</a>
-        </div>
+    <div id="mainland-butt"><a class="waves-effect waves-light btn"><i class="material-icons left">arrow_downward</i>View Portfolio</a>
+    </div>
+    </div>
+        
     <script src="particles.js"></script>
     <script src="app.js"></script>
-    </div>
+    
 </div>
 
 <div id ="navbar">
@@ -37,28 +37,48 @@
                 <a href="#!" class="brand-logo">Logo</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Sass</a></li>
-                    <li><a href="#">Components</a></li>
-                    <li><a href="#">Javascript</a></li>
-                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
                 </div>
             </nav>
             
             <ul class="sidenav" id="mobile-demo">
-                <li><a href="#">Sass</a></li>
-                <li><a href="#">Components</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Mobile</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             
 </div>
 
 <div id="bio">
-    <img id="bio-pic" src=""></img>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./assets/images/biobg.png" class="responsive-img">
+        </div>
+    </div>
+    
+        <img id="bio-pic" src="./assets/images/biopic.png">
+    
+    <div id="bio-Desc">
+        <h1>Hi I'm Jason, a full-stack developer based in NYC.</h1>
+    </div>
 </div>
-<div id="bio-Desc">
-    <h1>Hi I'm Jason.</h1>
+
+<div id="skills">
+    
+</div>
+
+<div id="portfolio">
+    
+</div>
+
+<div id="contact">
+    <h1>contact me</h1>
 </div>
 
 
@@ -71,7 +91,19 @@
 
 
 
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $('.parallax-container').parallax();
+    $('.parallax').parallax();
+});
+</script>
 
 
 

@@ -1,9 +1,9 @@
 body {
 
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     height: 100vh;
-    background-color: #dcdde1;
+    background-color: #b2bec3;
 
 }
 
@@ -18,9 +18,15 @@ body {
 
 }
 
-#skills, #portfolio, #contact {
+#main-landing, #bio, #skills, #portfolio, #contact {
 
     height: 100vh;
+
+}
+
+#main-landbg {
+
+    background-image: cover;
 
 }
 
@@ -28,7 +34,7 @@ body {
 
     position: absolute;
     padding-left: 600px;
-    padding-top: 550px;
+    /* padding-top: 550px; */
 
 }
 
@@ -40,26 +46,53 @@ body {
 
 #bio {
 
-    padding-top: 50px;
-    height: 100vh;
-    
+    padding-top: 13px;
+
 }
+
+#biolax {
+
+    height: 30vh;
+
+}
+
 
 #bio-pic {
 
     display: flex;
     flex-direction: row;
-    margin: auto;
-    max-width: 25%;
+    float: left;
+    max-width: 30%;
     height: auto;
-    padding-top: 20px;
+    padding-top: 13px;
     border-radius: 30%;
+    margin-left: 30px;
+    margin-right: 30px;
 
 }
 
 #bio-Desc {
 
-    color: #f6e58d;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 15px;
+    padding-top: 10px;
+    
+}
+
+#cardSect {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30px;
 
 }
+
+#cardLG {
+
+    max-width: 100%;
+
+}
+

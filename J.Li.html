@@ -21,45 +21,47 @@
 <body>
 
 <div id="container">
+    
 
 <div id="main-landing">
-    
-<!-- </div> -->
+    <div id="main-landingbg">
+        <div id="navy">
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo">Logo</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                        <li><a href="#biolax">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         
-    <div id="mainland-butt">
-        <a class="waves-effect waves-light btn"><i class="material-icons left">arrow_downward</i>View Portfolio</a>
-    </div>
-    
-</div>
-
-<div id="navy">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-            <li><a href="#bio">About</a></li>
+            <ul class="sidenav" id="mobile-demo">
+            <li><a href="#biolax">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">contact</a></li>
             </ul>
         </div>
-        </nav>
-    
-        <ul class="sidenav" id="mobile-demo">
-        <li><a href="#bio">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#">contact</a></li>
-        </ul>
+    </div>      
 </div>
+
+
 
 
 <div id="bio" class="scrollspy">
 
-    <div class="parallax-container" id="biolax">
+    <div id="biolax"></div>
+    
+    <div class="parallax-container">
         <div class="parallax">
             <img src="./assets/images/biobg.png" class="responsive-img">
         </div>
     </div>
+
     
     <div id="biocontain">
         <img id="bio-pic" src="./assets/images/biopic.png">
@@ -217,6 +219,8 @@
     $('.parallax').parallax();
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
+        
+
 });
 </script>
 

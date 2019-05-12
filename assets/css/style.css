@@ -1,9 +1,8 @@
 html, body {
 
-    margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #b2bec3;
     font-family: "Oxygen", sans-serif;
 
@@ -17,36 +16,42 @@ html, body {
 
 #main-landing {
 
+    height: 100vh;
+
+}
+
+#main-landingbg {
+
     background-image: url(../images/hkrside.png);
     background-size: cover;
-    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 
 }
 
-#mainland-butt {
-
-    padding-top: 550px;
-    padding-left: 600px;
-  
-  
-
-}
-
-.nav-wrapper {
+nav, .nav-wrapper {
 
     background-color: #3dc1d3;
+    height: 30px !important;
+    line-height: 30px;
 
 }
 
-#bio {
 
-    padding-top: 13px;
 
-}
 
 #biolax {
 
-    height: 30vh;
+    /* margin-top: 13px; */
+    padding-top: 60px;
+
+}
+
+.parallax-container {
+
+    max-height: 20vh;
+    border: 2.5px solid;
 
 }
 
@@ -56,7 +61,7 @@ html, body {
     display: flex;
     flex-direction: row;
     float: left;
-    max-width: 30%;
+    max-width: 20%;
     height: auto;
     padding-top: 13px;
     border-radius: 30%;

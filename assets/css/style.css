@@ -8,7 +8,7 @@ html, body {
 
 }
 
-#bio, #skills, #portfolio, #contact {
+#bio, #portfolio, #contact {
 
     height: 100vh;
 
@@ -32,41 +32,62 @@ html, body {
 
 nav, .nav-wrapper {
 
-    background-color: #3dc1d3;
-    height: 30px !important;
-    line-height: 30px;
+    background-color: #82ccdd;
+    height: 50px !important;
+    line-height: 50px;
 
 }
 
+#jLogo {
 
+    font-style: oblique;
+    margin-left: 12px;
 
+}
 
 #biolax {
 
-    /* margin-top: 13px; */
-    padding-top: 60px;
+    padding-top: 20px;
+
+}
+
+#biolaxHead, #portHead, #contactHead {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-style: oblique;
+    color: #273c75;
+
+}
+
+#portSect {
+
+    padding-top: 20px;
 
 }
 
 .parallax-container {
 
     max-height: 20vh;
-    border: 2.5px solid;
+    border: 3px solid #2f3542;
 
 }
 
-
 #bio-pic {
 
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     float: left;
     max-width: 20%;
     height: auto;
-    padding-top: 13px;
+    margin-top: 13px;
     border-radius: 30%;
     margin-left: 30px;
     margin-right: 30px;
+    border: 2.5px solid #F8EFBA;
+    box-shadow: 5px 10px 8px #f5f6fa;
+
 
 }
 
@@ -75,7 +96,7 @@ nav, .nav-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: black;
+    color: #273c75;
     font-size: 15px;
     padding-top: 10px;
     
@@ -97,4 +118,122 @@ nav, .nav-wrapper {
     
 }
 
+.card a {
 
+    margin: 5px;
+    color:  #535c68;
+    
+}
+
+.card-content {
+
+    background-color: #f7f1e3;
+    max-height: 50% !important;
+
+}
+
+#cardTitle, #cardDesc {
+
+    color: #535c68;
+
+} 
+
+#cardButt {
+
+    background-color: #c7ecee;
+
+}
+
+#cardButt > i {
+
+    vertical-align: middle;
+    color: #535c68;
+
+}
+
+#contactSect {
+
+    margin-top: 400px; 
+    padding-top: 5px; 
+    
+}
+
+#iCons {
+
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#emailIcon, #githubIcon, #linkedinIcon {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+#emailIcon {
+
+    color: #55efc4;
+    
+}
+
+#githubIcon {
+
+    color: #2f3542;
+
+}
+
+#linkedIcon {
+
+    color: #3742fa;
+
+}
+
+
+/* media queries */
+
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    #container {
+
+        width: 90%;
+
+    } */
+
+
+    /* nav, nav-wrapper {
+
+        max-width: 100%;
+
+    }
+
+    #jLogo {
+
+        padding-right: 60px;
+    }
+
+    #main-landingbg {
+
+        max-width: 375px;
+
+    }
+
+    #biolaxHead {
+
+        margin-right: 60px;
+
+    }
+
+    #bio-Desc {
+
+        float: left;
+
+    } */
+
+    
+/* } */

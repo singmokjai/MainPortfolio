@@ -14,12 +14,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=Oxygen:700" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <title>J.Li | Portfolio</title>
 
     <link rel = "icon" type = "image/png" href = "./assets/images/biopiccon2.ico">
 </head>
 <body>
 
+
+<!-- <div class="row">
+<div class="col s12">     -->
 <div id="container">
     
 
@@ -29,12 +34,12 @@
             <div class="navbar-fixed">
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="#!" class="brand-logo">Logo</a>
+                        <a href="#!" class="brand-logo" id="jLogo">J.Li</a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
                         <li><a href="#biolax">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#portSect">Portfolio</a></li>
+                        <li><a href="#contactSect">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -42,8 +47,8 @@
         
             <ul class="sidenav" id="mobile-demo">
             <li><a href="#biolax">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#portSect">Portfolio</a></li>
+            <li><a href="#contactSect">Contact</a></li>
             </ul>
         </div>
     </div>      
@@ -54,7 +59,11 @@
 
 <div id="bio" class="scrollspy">
 
-    <div id="biolax"></div>
+    <div class="row">
+        <div class="col s12">
+    <div id="biolax">
+        <h1 id="biolaxHead">About</h1>
+    </div>
     
     <div class="parallax-container">
         <div class="parallax">
@@ -64,16 +73,33 @@
 
     
     <div id="biocontain">
-        <img id="bio-pic" src="./assets/images/biopic.png">
-        
-        <div id="bio-Desc">
-            <h3>Hello I'm Jason, a full stack developer based in NYC. I have strong passion for animations, UI effects, and creating interactive user experiences.</h3>
-        </div>
+        <!-- <div class="row"> -->
+            <!-- <div class="col s12"> -->
+                <div>
+                <img id="bio-pic" src="./assets/images/biopic.png">
+                </div>
+            <!-- <div class="col l1"> -->
+                <div id="bio-Desc">
+                    <h3>Hello I'm Jason, a full stack developer based in NYC. I have strong passion for animations, UI effects, and creating interactive user experiences. Welcome to my page, have a look around!</h3>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
+</div>
+</div>
 </div>
 
 
-<div id="portfolio" class="scrollspy">
+<div id="portfolio" class="scrollspy"> 
+
+    <div class="row">
+        <div class="col s12">
+            <div id=portSect>
+                <h1 id=portHead>Portfolio</h1>
+            </div>
+        </div>
+    </div>
+
     <div id="cardSect">
         <div class="row">
             <div class="col m4">
@@ -82,12 +108,14 @@
                     <img class="activator" src="./assets/images/uwell.PNG">
                     </div>
                     <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <span class="card-title activator" id="cardTitle">uWell<i class="material-icons right">more_vert</i></span>
+                    <a class="waves-effect waves-light btn hoverable" href="https://github.com/singmokjai/uWell" target="_blank" id="cardButt"><i class=" material-icons">code</i> See Code</a>
+
+                    <a class="waves-effect waves-light btn hoverable" href="https://uwell.herokuapp.com/" target="_blank" id="cardButt"><i class=" material-icons">laptop_mac</i> Deployed Site</a>
                     </div>
                     <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title" id="cardTitle">uWell<i class="material-icons right">close</i></span>
+                    <p id="cardDesc">uWell is a social media application with a theme of general wellness and life enrichment.</p>
                     </div>
                 </div>
             </div>
@@ -95,31 +123,35 @@
             <div class="col m4">
                 <div class="card medium hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="./assets/images/uwell.PNG">
+                    <img class="activator" src="./assets/images/PVLogo_50.png">
                     </div>
                     <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <span class="card-title activator" id="cardTitle">PartyVite<i class="material-icons right">more_vert</i></span>
+                    <a class="waves-effect waves-light btn hoverable" href="https://github.com/singmokjai/PartyVite" target="_blank" id="cardButt"><i class=" material-icons">code</i> See Code</a>
+
+                    <a class="waves-effect waves-light btn hoverable" id="cardButt"><i class=" material-icons">mobile_screen_share</i> Mobile App</a>
                     </div>
                     <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title" id="cardTitle">PartyVite<i class="material-icons right">close</i></span>
+                    <p id="cardDesc">A mobile app that sends party invitations via text messages to phone contacts.</p>
                     </div>
                 </div>
             </div>
 
             <div class="col m4">
-                <div class="card small hoverable">
+                <div class="card medium hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="./assets/images/uwell.PNG">
+                    <img class="activator" src="./assets/images/checkmate.PNG">
                     </div>
                     <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <span class="card-title activator" id="cardTitle">CheckMate<i class="material-icons right">more_vert</i></span>
+                    <a class="waves-effect waves-light btn hoverable" href="https://github.com/singmokjai/CheckMate" target="_blank" id="cardButt"><i class=" material-icons">code</i> See Code</a>
+
+                    <a class="waves-effect waves-light btn hoverable" href="https://singmokjai.github.io/CheckMate/" target="_blank" id="cardButt"><i class=" material-icons">laptop_mac</i> Deployed Site</a>
                     </div>
                     <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title" id="cardTitle">CheckMate<i class="material-icons right">close</i></span>
+                    <p id="cardDesc">This web application will determine an estimate of artists' earnings on YouTube.</p>
                     </div>
                 </div>
             </div>
@@ -131,15 +163,17 @@
             <div class="col m4">
                 <div class="card medium hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="./assets/images/uwell.PNG">
+                    <img class="activator" src="./assets/images/train.PNG">
                     </div>
                     <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <span class="card-title activator" id="cardTitle">MTA 2.0<i class="material-icons right">more_vert</i></span>
+                    <a class="waves-effect waves-light btn hoverable" href="https://github.com/singmokjai/MTA-2.0" target="_blank" id="cardButt"><i class=" material-icons">code</i> See Code</a>
+
+                    <a class="waves-effect waves-light btn hoverable" href="https://singmokjai.github.io/MTA-2.0/" target="_blank" id="cardButt"><i class=" material-icons">laptop_mac</i> Deployed Site</a>
                     </div>
                     <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title" id="cardTitle">MTA 2.0<i class="material-icons right">close</i></span>
+                    <p id="cardDesc">A reliable source for MTA train schedules with arrival and departure data.</p>
                     </div>
                 </div>
             </div>
@@ -147,31 +181,35 @@
             <div class="col m4">
                 <div class="card medium hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="./assets/images/uwell.PNG">
+                    <img class="activator" src="./assets/images/gify.PNG">
                     </div>
                     <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <span class="card-title activator" id="cardTitle">GifTastic<i class="material-icons right">more_vert</i></span>
+                    <a class="waves-effect waves-light btn hoverable" href="https://github.com/singmokjai/GifTastic" target="_blank" id="cardButt"><i class=" material-icons">code</i> See Code</a>
+
+                    <a class="waves-effect waves-light btn hoverable" href="https://singmokjai.github.io/GifTastic/" target="_blank" id="cardButt"><i class=" material-icons">laptop_mac</i> Deployed Site</a>
                     </div>
                     <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title" id="cardTitle">GifTastic<i class="material-icons right">close</i></span>
+                    <p id="cardDesc">An interactive and exciting web page with GIFs of users' choice!</p>
                     </div>
                 </div>
             </div>
 
             <div class="col m4">
-                <div class="card small hoverable">
+                <div class="card medium hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="./assets/images/uwell.PNG">
+                    <img class="activator" src="./assets/images/trivia.PNG">
                     </div>
                     <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <span class="card-title activator" id="cardTitle">Trivialities<i class="material-icons right">more_vert</i></span>
+                    <a class="waves-effect waves-light btn hoverable" href="https://github.com/singmokjai/Trivialities" target="_blank" id="cardButt"><i class=" material-icons">code</i> See Code</a>
+
+                    <a class="waves-effect waves-light btn hoverable" href="https://singmokjai.github.io/Trivialities/"target="_blank" id="cardButt"><i class=" material-icons">laptop_mac</i> Deployed Site</a>
                     </div>
                     <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title" id="cardTitle">Trivialities<i class="material-icons right">close</i></span>
+                    <p id="cardDesc">Into trivia? Try out this fun and random trivia game!</p>
                     </div>
                 </div>
             </div>
@@ -179,30 +217,22 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="contact" class="scrollspy">
-    <h1>contact me</h1>
+    <div class="row">
+        <div class="col s12">
+            <div id="contactSect">
+                <h1 id="contactHead">Contact</h1>
+            </div>
+            <div id="iCons">
+            <a href="mailto:lijason001@gmail.com" id="emailIcon"><i class="far fa-envelope fa-7x"></i></a>
+            <a href="https://github.com/singmokjai" id="githubIcon"><i class="fab fa-github fa-7x"></i></a>
+            <a href="https://www.linkedin.com/in/jasonli01/" id="linkedinIcon"><i class="fab fa-linkedin fa-7x"></i></a>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
-
-
-
-
-
+<!-- </div>
+</div> -->
 
 
 
@@ -211,7 +241,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <script>
     $(document).ready(function(){

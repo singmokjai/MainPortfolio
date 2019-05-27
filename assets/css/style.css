@@ -8,9 +8,15 @@ html, body {
 
 }
 
-#bio, #portfolio, #contact {
+#bio, #portfolio {
 
     height: 100vh;
+
+}
+
+#contact {
+
+    margin-bottom: 400px;
 
 }
 
@@ -45,6 +51,33 @@ nav, .nav-wrapper {
 
 }
 
+.typeWriter h1 {
+
+    color: #273c75;
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    margin: 50px 50px auto;
+    letter-spacing: .10em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    animation-name: typing, blink-caret;
+
+}
+
+@keyframes typing {
+
+    from {width: 0}
+    to {width: 100}
+
+} 
+
+@keyframes blink-caret {
+
+    from, to {border-color: transparent}
+    50% {border-color: #273c75}
+
+}
+
 #biolax {
 
     padding-top: 20px;
@@ -74,12 +107,7 @@ nav, .nav-wrapper {
 
 }
 
-#picContain {
 
-
-    /* margin-left: 200px; */
-
-}
 #bio-pic {
 
     display: flex;
@@ -160,7 +188,7 @@ nav, .nav-wrapper {
 
 #contactSect {
 
-    margin-top: 400px; 
+    margin-top: 450px; 
     padding-top: 5px; 
     
 }
@@ -199,56 +227,34 @@ nav, .nav-wrapper {
 }
 
 
+
+
 /* media queries */
 
 @media only screen  
+
     and (min-device-width: 375px) 
-    /* and (max-device-width: 812px)  */
     and (-webkit-min-device-pixel-ratio: 3) { 
 
 
     #bio-pic {
 
-        width: 70%;
-        margin-left: 150px;
+        max-width: 95%;
+        margin-left: 6px;
     
     }
 
     #bio-Desc h3 {
 
-        font-size: 30px;
+        font-size: 10px;
 
     } 
 
+    .typeWriter h1 {
 
-    /* nav, nav-wrapper {
-
-        max-width: 100%;
-
-    }
-
-    #jLogo {
-
-        padding-right: 60px;
-    }
-
-    #main-landingbg {
-
-        max-width: 375px;
+        white-space: normal;
+        letter-spacing: .1px;
 
     }
 
-    #biolaxHead {
-
-        margin-right: 60px;
-
-    }
-
-    #bio-Desc {
-
-        float: left;
-
-    } */
-
-    
 }

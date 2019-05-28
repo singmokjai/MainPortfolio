@@ -10,13 +10,7 @@ html, body {
 
 #bio {
 
-    height: 100vh;
-
-}
-
-#contact {
-
-    /* margin-bottom: 400px; */
+    height: 135vh;
 
 }
 
@@ -58,7 +52,8 @@ nav, .nav-wrapper {
     border-right: .15em solid;
     white-space: nowrap;
     margin: 50px 50px auto;
-    letter-spacing: .10em;
+    letter-spacing: .5em;
+    font-size: 30px;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
     animation-name: typing, blink-caret;
 
@@ -80,7 +75,7 @@ nav, .nav-wrapper {
 
 #biolax {
 
-    padding-top: 20px;
+    padding-top: 15px;
 
 }
 
@@ -94,6 +89,12 @@ nav, .nav-wrapper {
 
 }
 
+#contactHead {
+
+    color: #f7f1e3 !important;
+
+}
+
 #portSect {
 
     padding-top: 20px;
@@ -102,26 +103,23 @@ nav, .nav-wrapper {
 
 .parallax-container {
 
-    max-height: 20vh;
+    max-height: 25vh;
     border: 3px solid #2f3542;
+    margin-bottom: 8px;
 
 }
-
 
 #bio-pic {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
     max-width: 20%;
     height: auto;
-    margin-top: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
     border-radius: 30%;
-    margin-left: 550px;
-    margin-right: 30px;
     border: 2.5px solid #F8EFBA;
     box-shadow: 5px 10px 8px #f5f6fa;
-
 
 }
 
@@ -136,8 +134,15 @@ nav, .nav-wrapper {
     
 }
 
+#portfolio {
+
+    background-image: url(../images/frame4.png);
+    background-size: cover;
+    
+}
 
 #cardSect {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -188,15 +193,14 @@ nav, .nav-wrapper {
 
 #contact {
 
-    background-image: url(../images/darkbg.png);
+    background-image: url(../images/night.png);
     background-size: cover;
 
 }
 
 #contactSect {
 
-    /* margin-top: 450px;  */
-    padding-top: 5px; 
+    padding-top: 20px; 
     
 }
 
@@ -235,14 +239,20 @@ nav, .nav-wrapper {
 
 
 
-
 /* media queries */
 
-@media only screen  
+/* iphone & mobile */
 
+@media only screen 
     and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
 
+    #bio {
+
+        height: 135vh;
+
+    }
 
     #bio-pic {
 
@@ -260,9 +270,87 @@ nav, .nav-wrapper {
     .typeWriter h1 {
 
         white-space: normal;
-        letter-spacing: .1px;
-        font-size: 30px;
+        letter-spacing: .1em;
+        font-size: 28px;
 
     }
 
+    #iCons {
+
+        padding-top: 100px;
+
+    }
+
+}
+
+/* iPads & tablets */
+
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    #bio-pic {
+
+        margin: 0 auto;
+        max-width:  50%;
+        margin-top: 20px;
+
+    }
+
+    #bio {
+
+        height: 115vh;
+
+    }
+
+    #bio-Desc {
+
+        padding-top: 30px;
+
+    }
+
+    .typeWriter h1 {
+
+        font-size: 30px;
+        letter-spacing: .4em;
+        white-space: normal;
+
+    }
+
+    #iCons {
+
+        padding-top: 125px;
+        font-size: 20px;
+
+    }
+
+    #contactSect {
+
+        padding-top: 30px;
+
+    }
+
+}
+
+/* Retina Laptops */
+
+@media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi) { 
+
+    #bio {
+
+        height: 100vh;
+
+    }
+
+    .typeWriter h1 {
+
+        font-size: 26px;
+
+    }
+    
 }

@@ -53,7 +53,7 @@ nav, .nav-wrapper {
     white-space: nowrap;
     margin: 50px 50px auto;
     letter-spacing: .5em;
-    font-size: 30px;
+    font-size: 24px;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
     animation-name: typing, blink-caret;
 
@@ -287,7 +287,7 @@ nav, .nav-wrapper {
 
 @media only screen 
     and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
+    and (max-device-width: 1023px) 
     and (-webkit-min-device-pixel-ratio: 2) {
 
     #bio-pic {
@@ -328,6 +328,35 @@ nav, .nav-wrapper {
     #contactSect {
 
         padding-top: 30px;
+
+    }
+
+}
+
+/* iPad Pro 12.9 */
+
+@media only screen 
+    and (min-device-width: 1024px) 
+    and (max-device-width: 1366px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .typeWriter h1 {
+
+        font-size: 18px;
+        margin: 100px 50px auto;
+
+    }
+
+    #bio {
+
+        height: 80vh;
+
+    }
+
+    #iCons {
+
+        padding-top: 120px;
+        font-size: 20px;
 
     }
 

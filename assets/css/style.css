@@ -11,6 +11,14 @@ html, body {
 #bio {
 
     height: 135vh;
+    background-image: url(../images/darkwood.png);
+
+}
+
+
+.parallax-container {
+
+    z-index: 1;
 
 }
 
@@ -95,6 +103,12 @@ nav, .nav-wrapper {
 
 }
 
+#biolaxHead {
+
+    color: #a4b0be;
+
+}
+
 #portSect {
 
     padding-top: 20px;
@@ -128,7 +142,7 @@ nav, .nav-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #273c75;
+    color: #a4b0be;
     font-size: 15px;
     padding-top: 10px;
     
@@ -350,6 +364,12 @@ nav, .nav-wrapper {
     #bio {
 
         height: 80vh;
+
+    }
+
+    #bio-pic {
+
+        max-width: 30%;
 
     }
 

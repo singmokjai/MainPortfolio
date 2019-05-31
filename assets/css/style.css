@@ -410,13 +410,20 @@ nav, .nav-wrapper {
 
     #bio {
 
-        height: 100vh;
+        height: 110vh;
 
     }
 
     .typeWriter h1 {
 
         font-size: 26px;
+        letter-spacing: .4em;
+
+    }
+
+    #contactSect {
+
+        padding-top: 20px;
 
     }
     

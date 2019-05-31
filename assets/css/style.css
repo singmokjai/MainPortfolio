@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     background-color: #b2bec3;
     font-family: "Oxygen", sans-serif;
+    scroll-behavior: smooth;
 
 }
 

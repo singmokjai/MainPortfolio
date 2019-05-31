@@ -53,16 +53,33 @@ nav, .nav-wrapper {
 
 }
 
+.typeContain {
+
+    font-family: "Oxygen", sans-serif monospace;
+    display: inline-block;
+
+}
+
 .typeWriter h1 {
 
+    display: inline-block;
     color: #273c75;
     overflow: hidden;
     border-right: .15em solid;
     white-space: nowrap;
     margin: 50px 50px auto;
     letter-spacing: .5em;
-    font-size: 24px;
-    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    font-family: Courier, monospace;
+    font-weight: 700;
+    font-size: 22px;
+    animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+    animation-duration: 3.5s, 0.5s;
+    animation-timing-function: steps(30, end), step-end;
+    animation-delay: 0s, 0s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, normal;
+    animation-fill-mode: none, none;
+    animation-play-state: running, running;
     animation-name: typing, blink-caret;
 
 }
@@ -285,7 +302,7 @@ nav, .nav-wrapper {
 
         white-space: normal;
         letter-spacing: .1em;
-        font-size: 28px;
+        font-size: 27px;
 
     }
 
@@ -356,14 +373,15 @@ nav, .nav-wrapper {
 
     .typeWriter h1 {
 
-        font-size: 18px;
+        font-size: 30px;
         margin: 100px 50px auto;
+        /* font-family: "Oxygen" monospace; */
 
     }
 
     #bio {
 
-        height: 80vh;
+        height: 90vh;
 
     }
 

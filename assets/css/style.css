@@ -9,6 +9,20 @@ html, body {
 
 }
 
+body {
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+main {
+
+    flex: 1 0 auto;
+
+}
+
 #bio {
 
     height: 135vh;
@@ -23,7 +37,7 @@ html, body {
 
 }
 
-#main-landing, #contact {
+#main-landing {
 
     height: 100vh;
 
@@ -227,6 +241,7 @@ nav, .nav-wrapper {
 
     background-image: url(../images/night.png);
     background-size: cover;
+    height: 90vh;
 
 }
 
@@ -266,6 +281,19 @@ nav, .nav-wrapper {
 #linkedIcon {
 
     color: #3742fa;
+
+}
+
+.page-footer {
+
+    text-align: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+    height: 50px;
+    vertical-align: middle;
+    font-family: "Oxygen", sans-serif;
+    font-style: oblique;
+    background-color: #82ccdd !important;
 
 }
 

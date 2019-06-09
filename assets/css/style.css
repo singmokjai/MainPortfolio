@@ -57,6 +57,12 @@ main {
 
 }
 
+video {
+
+    overflow: hidden;
+    
+}
+
 nav, .nav-wrapper {
 
     background-color: #82ccdd;

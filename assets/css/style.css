@@ -60,7 +60,8 @@ main {
 video {
 
     overflow: hidden;
-    
+    object-fit: cover;
+
 }
 
 nav, .nav-wrapper {
